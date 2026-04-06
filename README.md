@@ -1,24 +1,38 @@
-# 🚀 Full Stack Web Application
+# 🚀 Full Stack Web Application – VR Recommender
 
 ## 📌 Project Overview
 
-This is a full-stack web application built using modern technologies. The project follows a structured development approach with separate frontend, backend, and database layers.
+This project is a full-stack web application developed to explore and recommend virtual tourism experiences, specifically focused on **Bihar’s historical and cultural locations**.
+
+Initially, the backend was developed using **Node.js and Express**, and later extended by implementing a **Django-based backend** to render dynamic web pages and demonstrate multi-technology backend capabilities.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### 🎨 Frontend
 
-* HTML, CSS, JavaScript
-* React.js
+* HTML
+* CSS
+* JavaScript
 
-### Backend
+---
+
+### ⚙️ Backend
+
+#### 🔹 Initial Implementation
 
 * Node.js
 * Express.js
 
-### Database
+#### 🔹 Current Implementation
+
+* Python
+* Django
+
+---
+
+### 🗄️ Database (Planned)
 
 * MongoDB
 
@@ -29,16 +43,28 @@ This is a full-stack web application built using modern technologies. The projec
 ```
 fullstack-web-app/
 │
-├── client/      # Frontend (React)
-├── server/      # Backend (Node + Express)
-├── database/    # Database configs & schemas
+├── client/              # Frontend (UI components)
+├── server/
+│   ├── backend/         # Django backend (current implementation)
+│   │   ├── api/         # Django app (views, urls, templates)
+│   │   ├── backend/     # Django project settings
+│   │   └── manage.py
+│   │
+│   ├── routes/          # Express routes (initial backend)
+│   ├── controllers/     # Express controllers
+│   ├── models/          # Express models
+│   ├── middleware/      # Express middleware
+│   ├── server.js        # Express entry point
+│   └── package.json
+│
+├── database/            # Database configs (planned)
 ```
 
 ---
 
 ## 👥 Team Members
 
-* **Aishwarya** – Backend Developer
+* **Aishwarya** – Backend Developer 
 * **Creyal** – Backend Developer
 * **Pooja** – Frontend Developer
 * **Anushka** – Database Designer
@@ -47,39 +73,64 @@ fullstack-web-app/
 
 ## 🔄 Development Workflow
 
-* All development is done on the `temp` branch
-* Stable features are merged into the `develop` branch
-* Final production-ready code will be in the `main` branch
+* `temp` → Active development (Django implementation)
+* `develop` → Stable Node.js backend
+* `main` → Final production-ready version
 
 ---
 
 ## 🚀 Current Status
 
-✅ Project initialized
-✅ Folder structure created
-✅ Backend setup started
+✅ Node.js backend implemented (basic server)
+✅ Django backend integrated
+✅ Homepage successfully rendered using Django
+✅ UI designed for Bihar VR tourism
 
 ---
 
-## 📌 Future Plans
+## 🎯 Key Features
 
-* Implement authentication (Login/Signup)
-* Connect frontend with backend APIs
-* Integrate MongoDB database
-* Deploy application
+* 🌍 VR Tourism UI focused on Bihar
+* ⚡ Django-based homepage rendering
+* 🔀 Dual backend architecture (Node + Django)
+* 🎨 Responsive and modern UI
 
 ---
 
-## ⚡ How to Run (Backend)
+## 📌 Future Enhancements
+
+* 🔐 Authentication system (Login/Signup)
+* 🔗 Connect frontend with backend APIs
+* 🗄️ Database integration (MongoDB / Django ORM)
+* 🔍 Search & filter locations
+* 🚀 Deployment
+
+---
+
+## ⚡ How to Run
+
+### 🔹 Run Django Server
+
+```bash
+cd server/backend
+python manage.py runserver
+```
+
+👉 Open in browser:
+http://127.0.0.1:8000/
+
+---
+
+### 🔹 Run Node Server (Optional)
 
 ```bash
 cd server
 npm install
-node index.js
+node server.js
 ```
 
 ---
 
 ## 📜 License
 
-This project is for educational purposes.
+This project is developed for educational purposes as part of academic coursework.
