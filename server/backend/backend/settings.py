@@ -8,7 +8,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# ✅ INSTALLED APPS
+#  INSTALLED APPS
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'api',
 ]
 
-# ✅ MIDDLEWARE
+#  MIDDLEWARE
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -30,10 +30,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# ✅ URL CONFIG
+# URL CONFIG
 ROOT_URLCONF = 'backend.urls'
 
-# ✅ TEMPLATES
+# TEMPLATES
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -49,10 +49,10 @@ TEMPLATES = [
     },
 ]
 
-# ✅ WSGI
+# WSGI
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-# ✅ DATABASE
+#  DATABASE
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -60,17 +60,17 @@ DATABASES = {
     }
 }
 
-# ✅ PASSWORD VALIDATION
+# PASSWORD VALIDATION
 AUTH_PASSWORD_VALIDATORS = []
 
-# ✅ LANGUAGE
+# LANGUAGE
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 USE_TZ = True
 
-# ✅ STATIC
+# STATIC
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
